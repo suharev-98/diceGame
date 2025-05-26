@@ -21,5 +21,5 @@ A simple, fun, and interactive dice game for two players, built with pure JavaSc
 ## 🚀 Live Demo
 
 Try the game live:  
-👉 [Play on GitHub Pages](https://yourusername.github.io/dice-game)
+👉 [Play on GitHub Pages](https://suharev-98.github.io/diceGame/)
 
