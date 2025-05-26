@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background-color: #a8dadc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.player {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.player--active {
+  background-color: rgba(53, 60, 73, 0.101);
+}
+
+.player--winner {
+  background-color: #5ac9bcbd;
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #457b9d;
+}
+
+.score {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.current {
+  margin-top: auto;
+  background-color: #f1faee;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  color: #1d3557;
+  text-align: center;
+}
+
+.current-label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.current-score {
+  font-size: 2rem;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-group {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #f1faee;
+  color: #1d3557;
+  transition: all 0.3s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #e63946;
+  color: #fff;
+}
